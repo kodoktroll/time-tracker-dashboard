@@ -1,0 +1,119 @@
+<div class="card card-time">
+    <div class="card-time__icon work">
+      <img src="/images/icon-work.svg" alt="Work" srcset=""/>
+    </div>
+      <div class="card-time__container">
+        <div id="name" class="card-time__name">
+          Work
+        </div>
+        <div id="time" class="card-time__time">
+          5hrs
+        </div>
+        <div class="card-time__ellipsis">
+          <img src="/images/icon-ellipsis.svg" alt="" srcset="">
+        </div>
+        <div id="previous" class="card-time__history">
+          Yesterday - 7hrs
+        </div>
+    </div>
+  </div>
+
+  <div class="card card-time">
+    <div class="card-time__icon play">
+      <img src="/images/icon-play.svg" alt="Work" srcset=""/>
+    </div>
+      <div class="card-time__container">
+        <div class="card-time__name">
+          Play
+        </div>
+        <div class="card-time__time">
+          1hr <!-- daily -->
+        </div>
+        <div class="card-time__ellipsis">
+          <img src="/images/icon-ellipsis.svg" alt="" srcset="">
+        </div>
+        <div class="card-time__history">
+          Yesterday - 2hrs <!-- daily -->
+        </div>
+    </div>
+  </div>
+
+  <div class="card card-time">
+    <div class="card-time__icon study">
+      <img src="/images/icon-study.svg" alt="Work" srcset=""/>
+    </div>
+      <div class="card-time__container">
+        <div class="card-time__name">
+          Study
+        </div>
+        <div class="card-time__time">
+          0hrs <!-- daily -->
+        </div>
+        <div class="card-time__ellipsis">
+          <img src="/images/icon-ellipsis.svg" alt="" srcset="">
+        </div>
+        <div class="card-time__history">
+          Yesterday - 1hr <!-- daily -->
+        </div>
+    </div>
+  </div>
+
+  <div class="card card-time">
+    <div class="card-time__icon exercise">
+      <img src="/images/icon-exercise.svg" alt="Work" srcset=""/>
+    </div>
+      <div class="card-time__container">
+        <div class="card-time__name">
+          Exercise
+        </div>
+        <div class="card-time__time">
+          1hr <!-- daily -->
+        </div>
+        <div class="card-time__ellipsis">
+          <img src="/images/icon-ellipsis.svg" alt="" srcset="">
+        </div>
+        <div class="card-time__history">
+          Yesterday - 1hr <!-- daily -->
+        </div>
+    </div>
+  </div>
+
+  <div class="card card-time">
+      <div class="card-time__icon social">
+        <img src="/images/icon-social.svg" alt="Work" srcset=""/>
+      </div>
+        <div class="card-time__container">
+          <div class="card-time__name">
+            Social
+          </div>
+          <div class="card-time__time">  
+            1hr <!-- daily -->
+          </div>
+          <div class="card-time__ellipsis">
+            <img src="/images/icon-ellipsis.svg" alt="" srcset="">
+          </div>
+          <div class="card-time__history">
+            Yesterday - 3hrs <!-- daily -->
+          </div>
+      </div>
+    </div>
+
+  <div class="card card-time">
+        <div class="card-time__icon self-care">
+          <img src="/images/icon-self-care.svg" alt="Work" srcset=""/>
+        </div>
+          <div class="card-time__container">
+            <div class="card-time__name">
+              Self Care
+            </div>
+            <div class="card-time__time">
+              0hrs <!-- daily -->
+            </div>
+            <div class="card-time__ellipsis">
+              <img src="/images/icon-ellipsis.svg" alt="" srcset="">
+            </div>
+            <div class="card-time__history">
+              Yesterday - 1hr <!-- daily -->
+            </div>
+        </div>
+  </div>

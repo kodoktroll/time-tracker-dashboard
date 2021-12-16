@@ -1,0 +1,246 @@
+.card{
+    margin-bottom: 1.5rem;
+
+    
+    @include breakpoint-up(large) {
+        &:hover {
+            transform: scale(1.05);
+            transition: all 150ms ease-in-out;
+        }
+    }
+    &-person{
+        @include breakpoint-up(large) {
+            order: 1;
+            grid-row: 1 / span 2;
+            min-height: 32rem;
+        }
+        &__top {
+            position: relative;
+            padding: 1.875rem;
+            display: flex;
+            border-radius: .625rem;
+            background-color: $blue;
+            @include breakpoint-up(large) {
+                display: block;
+                padding-bottom: 4.5rem;
+            }
+        }
+        &__image{
+            flex:1;
+            margin-right: 1.5rem;
+            align-self: center;
+            @include breakpoint-up(large) {
+                margin-bottom: 2.6125rem;
+            }
+            img {
+                height: 4.5rem;
+                position: relative;
+                border: white solid .1875rem;
+                border-radius:50%;
+            }
+        }
+        &__for {
+            flex: 0 0 80%;
+            align-self:flex-start;
+            p {
+                // font
+                color: $paleBlue;
+                margin-top: .625rem;
+                margin-bottom: .625rem;
+                font-weight: 400;
+                font-size: 1rem;
+            }
+            h2 {
+                margin: 0;
+                font-weight: 400;
+                font-size: 1.5rem;
+                @include breakpoint-up(large) {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        &__bottom {
+            padding: 1.875rem;
+            margin-top: -1rem;
+            background-color: $darkBlue;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: .625rem;
+            @include breakpoint-up(large) {
+                display: flex;
+                flex-direction: column;
+                max-height: 15rem;
+                align-items:flex-start;
+                justify-content:flex-start;
+                padding-top: 2.875rem;
+            }
+            a {
+                margin: 1rem 0 0 0;
+                
+                &:first-child{
+                    text-align: left;
+                }
+                &:nth-child(2) {
+                    text-align: left;
+                }
+                &:last-child {
+                    text-align: right;
+                }
+                @include breakpoint-up(large) {
+                    text-align: left;
+                    margin: 0 0 1.5rem 0;
+                    // margin-bottom: 1.5rem;
+                    // margin-bottom: 0 0 1.5rem 0;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                // @include breakpoint-up(large) {
+                //     margin: 
+                // }
+                
+            }
+        }
+    }
+    &-time {
+        @include breakpoint-up(large) {
+            // align-self: flex-start;
+            margin: 0;
+        }
+        &__icon {
+            position: relative;
+            z-index: 0;
+            display: block;  
+            max-height: 3rem;
+            border-radius: .625rem;
+            margin-bottom: -1rem;
+            min-height: 3rem;
+            overflow: hidden;
+            img{
+                position: absolute;
+                right: 5%;
+                top: -20%;
+                // transform: scale(.9);
+            }
+        }
+
+        &__container{
+            position: relative;
+            padding: 1.875rem;
+            background-color: $darkBlue;
+            border-radius: .625rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-auto-flow: column;
+            align-items: center;
+            gap: .625rem;
+            @include breakpoint-up(large) {
+                display: grid;
+                height: 12rem;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                // align-items: start;
+                // display: flex;
+                // flex-flow: column wrap;
+                // flex-flow: row wrap;
+                // max-height: 12rem;
+                // max-width: 100%;
+                // height: 100%;
+                align-items: start;
+                // flex-direction: column;
+                // gap: .25rem;
+                // flex-wrap: wrap;
+            }
+        }
+        &__name {
+            font-size: $cardFontSize;
+            font-weight: 500;
+            @include breakpoint-up(large) {
+                order: 0;
+                // flex: 1;
+                // flex: 1 33.333333%;
+                // flex: 1 1 33.3333333%;
+                // flex-basis: 25%;
+                // margin-bottom: 2rem;
+            }
+        }
+        &__time {
+            font-size: 1.5rem;
+            font-weight: 300;
+            @include breakpoint-up(large) {
+                order: 0;
+                font-size: 3rem;
+                // flex-basis: 25%;
+                // flex: 1 1 33.3333333%;
+                // flex: 1 33.333333%;
+                // flex: 1;
+                // margin-bottom: 1rem;
+            }
+        }
+        &__ellipsis {
+            justify-self: end;
+            @include breakpoint-up(large) {
+                align-self: start;
+                justify-self: end;
+                // flex-basis: 25%;
+                order: 2;
+                flex: 1 1 33.333333%;
+                // flex: 1 33.333333%;
+            }
+        }
+        &__history {
+            justify-self: end;
+            @include breakpoint-up(large) {
+                // flex: 0 0 33.3333333%;
+                // flex: 1 33.333333%;
+                // flex: 1;
+                flex: 1 1 33.333333%;
+                order: 0;
+                justify-self:start;
+                font-size: 1rem;
+                color: $paleBlue;
+            }
+        }
+        // &__
+    }
+}
+
+a {
+    text-decoration: none;
+    cursor:pointer;
+    color: $desaturatedBlue;
+}
+
+a:hover, .active {
+    color: white;
+}
+
+.active {
+    pointer-events: none;
+}
+
+.work {
+    background-color: $work;
+}
+
+.play {
+    background-color: $play;
+}
+
+.study {
+    background-color: $study;
+}
+
+.exercise {
+    background-color: $exercise;
+}
+
+.social {
+    background-color: $social;
+}
+
+.self-care {
+    background-color: $selfCare;
+}
